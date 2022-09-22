@@ -119,6 +119,7 @@ p {
 /*iframes*/
 
 iframe {
+    transition: 0.5s;
     width: 400px;
     height: 220px;
 }
@@ -146,47 +147,62 @@ input[type=checkbox] {
 }
 
 #myBar {
-	width: 50%;
+    transition: 0.5s;
+	width: 0%;
 	height: 30px;
-	background-color: var(--azul_escuro);
+	background-color: var(--azul_claro);
     border-radius: 20px;
 }
 
+#myBar p {
+    display: flex;
+    justify-content: end;
+    color: var(--azul_escuro);
+    padding-right: 10px;
+}
+
+footer {
+    background-color: var(--azul_claro);
+    padding: 2em 0;
+}
+
+footer section {
+    width: 80%;
+    margin: auto;
+    padding: 0.5em;
+    background-color: var(--azul_escuro);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+footer section div {
+    margin: 1em;
+}
+
+footer img{
+    height: 3rem;
+}
+
+footer img:hover{
+    transition: 0.5s;
+    height: 3.3rem;
+}
+
+#logoInsta {
+    width: 3rem;
+    margin: auto;
+}
 
 
 /*breakpoints*/
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     /*navbar*/
-    .navbar {
-        transition: 0.5s;
-        background-color: #3c5e4500;
-    }
-
-
-    /*sect_sobre*/
-    .cartao {
-        max-width: 70%;
-    }
-
-    .cartao_esquerda {
-        float: left;
-    }
-
-    .cartao_direita {
-        float: right;
-    }
-
-    /* .img_cartao{
-        border-radius: 0px 10px 10px 0px;
-    } */
-    #contato_container {
-        max-width: 800px;
-    }
-
-    input[type="submit"]{
-        min-width: 300px;
-        transition: .5s;
+    iframe {
+        
+        width: 300px;
+        height: 170px;
+        
     }
 }
